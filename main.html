@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <title>Flowers Design</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .text-section {
+            position: relative;
+            color: #FA8282;
+            top: 50px;
+            width: 20%;
+            padding: 20px;
+            left: 20%;
+        }
+
+        .nav-container {
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            width: 70%;
+            margin: 20px; 
+        }
+
+        .navbar {
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            position: right;
+            width: 70%;
+            top: 0;
+            background-color: #ffffff;
+        }
+
+        .navbar a {
+            float: right;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 50px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: silver;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+            color: black;
+            padding: 14px 16px;
+        }
+
+        .myImage {
+            width: 500px; 
+            height: auto; 
+        }
+
+        .product-grid {
+            position: relative;
+            top: -10%;
+            display: flex;
+            justify-content: space-around;
+            gap: 1px;
+            margin: 20px;
+            margin-left: 10%;
+        }
+
+        .product-card {
+            border: 1px solid #dee4e6;
+            border-radius: 5px;
+            width: 200px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .product-card img {
+            width: 150px; 
+            height: 150px; 
+        }
+
+        .product-card button {
+            width: 100px; 
+            height: 50px; 
+        }
+
+        .product-name {
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .product-price {
+            margin-bottom: 15px;
+            font-size: 18px;
+            color: #000000;
+        }
+
+        .more_detail-button {
+            background-color: #514EFF;
+            color: white;
+            padding: 5px 15px;
+            text-decoration: none;
+            border-radius: 15px;
+        }
+
+        .more_detail-button:hover {
+            background-color: black;
+        }
+
+        main {
+            position: relative;
+            top: -20%;
+            color: #FA8282;
+            margin-left: 20%;
+        }
+
+        .fixed-image {
+            position: relative;
+            left: 45%;
+            top: 320%;
+            width: 400px;
+            height: auto;
+        }
+
+        .catalog {
+            position: relative;
+            top: 130px;
+            color: #FA8282;
+            margin-left: 1.5%;
+        }
+
+        .product-grid2 {
+            position: relative;
+            top: 80px;
+            display: flex;
+            justify-content: space-around;
+            gap: 1px;
+            margin: 20px;
+            margin-left: 10%;
+        }
+
+        .product-card2 {
+            border: 1px solid #dee4e6;
+            border-radius: 5px;
+            width: 200px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .product-card2 img {
+            width: 150px; 
+            height: 150px; 
+        }
+
+        .product-card2 button {
+            width: 100px; 
+            height: 50px; 
+        }
+
+        .product-name2 {
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .product-price {
+            margin-bottom: 15px;
+            font-size: 18px;
+            color: #000000;
+        }
+
+        .buy-button {
+            background-color: #514EFF;
+            color: white;
+            padding: 5px 15px;
+            text-decoration: none;
+            border-radius: 15px;
+        }
+
+        .buy-button:hover {
+            background-color: black;
+        }
+
+        .product-grid3 {
+            position: relative;
+            top: 150px;
+            display: flex;
+            justify-content: space-around;
+            gap: 1px;
+            margin: 20px;
+            margin-left: 10%;
+        }
+
+        .product-card3 {
+            border: 1px solid #dee4e6;
+            border-radius: 5px;
+            width: 190px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .product-card3 img {
+            width: 150px; 
+            height: 150px; 
+        }
+
+        .product-card3 button {
+            width: 100px; 
+            height: 50px; 
+        }
+
+        .product-name3 {
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .product-price2 {
+            margin-bottom: 15px;
+            font-size: 18px;
+            color: #000000;
+        }
+
+        .buy-button2 {
+            background-color: #514EFF;
+            color: white;
+            padding: 5px 15px;
+            text-decoration: none;
+            border-radius: 15px;
+        }
+
+        .buy-button2:hover {
+            background-color: black;
+        }
+
+        .feedback {
+            position: relative;
+            top: 250px;
+            font-family: Arial, sans-serif;
+            font-style: italic;
+            text-align: center;
+            color: black;
+            background-color: #fff;
+            width: 50%;
+            left: 25%;
+        }
+
+        .feedback p {
+            position: relative;
+            top: 20px;
+            font-style: italic;
+            color: #FA8282;
+        }
+
+        .yes {
+            position: relative;
+            top: 50px;
+            background-color: #514EFF;
+            color: white;
+            padding: 5px 15px;
+            text-decoration: none;
+            border-radius: 15px;
+            margin: 20px;
+        }   
+
+        .yes:hover {
+            background-color: #000000;
+        }
+
+        .no {
+            position: relative;
+            top: 50px;
+            background-color: #514EFF;
+            color: white;
+            padding: 5px 15px;
+            text-decoration: none;
+            border-radius: 15px;
+            margin: 20px;
+        }
+
+        .no:hover {
+            background-color: #000000;
+        }
+
+        .adress {
+            position: relative;
+            top: 458px;
+            font-family: Arial, sans-serif;
+            font-style: italic;
+            color: white;
+            background-color: #FA8282;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Media Queries для адаптації до мобільних пристроїв */
+
+        @media only screen and (max-width: 1080px) {
+        .text-section,
+        .nav-container,
+        .product-card,
+        .product-card2,
+        .product-card3,
+        .feedback,
+        .adress {
+        width: 90%; 
+        }
+    }
+
+        @media only screen and (max-width: 768px) {
+        .text-section,
+        .nav-container,
+        .product-card,
+        .product-card2,
+        .product-card3,
+        .feedback,
+        .adress {
+        width: 95%;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="myImage" src="./images/photo_2024-03-12_14-57-17.jpg" alt="image"> 
+        <div class="nav-container">
+            <div class="navbar">
+                <a href="#Контакти">Контакти</a>
+                <a href="#Збери букет">Збери букет</a>
+                <a href="#Про нас">Про нас</a>
+                <a href="#Каталог">Каталог</a>
+            </div>
+            <div>
+                <img src="./images/pro_nas.jpg" class="fixed-image">
+            </div>
+            <main>
+                <h1>Квітковий Едем: Ваш оазис краси та аромату</h1>
+                <p>"Де кожен бутон - це витвір мистецтва, а кожен букет - історія кохання та вишуканості."</p>
+            </main> 
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="./images/images.jpg" alt="image" width="200" height="200">
+                    <div class="product-name">Букети</div>
+                    <a href="#detail" class="more_detail-button">Детальніше</a>
+                </div>
+                <div class="product-card">
+                    <img src="./images/images (1).jpg" alt="image" width="200" height="200">
+                    <div class="product-name">Живі квіти</div>
+                    <a href="#detail" class="more_detail-button">Детальніше</a>
+                </div>
+                <div class="product-card">
+                     <img src="./images/2129.jpg" alt="image" width="200" height="200">
+                     <div class="product-name">"Свій" букет</div>
+                     <a href="#detail" class="more_detail-button">Детальніше</a>
+                </div>
+            </div>   
+        </div>
+    </div>
+    <div class="text-section">
+        <h1>Про нас</h1>
+        <p>"Наш магазин пропонує вам вибір із витончених квіткових композицій, 
+            ексклюзивних сортів рослин та авторських букетів. Від романтичних троянд до 
+            екзотичних орхідей - ми створюємо кожен букет з любов'ю та прагненням подарувати 
+            вам неповторний естетичний досвід."</p>
+    </div>
+    <div class="catalog">
+        <h1>Каталог</h1>
+    </div>
+    <div class="product-grid2">
+        <div class="product-card2">
+            <img src="./images/buket-z-rozhevih-pionopodibnih-troyand-misti-bablz-3.400x400.png" alt="image" width="200" height="200">
+            <div class="product-name2">БУКЕТ ІЗ 19-ТИ РОЖЕВИХ ТРОЯНД МІСТІ БАБЛ</div>
+            <div class="product-price">ціна від 1650</div>
+            <a href="#buy" class="buy-button">Купити</a>
+        </div>
+        <div class="product-card2">
+            <img src="./images/buket_ledi-bombastik_1_1806.400x400.png" alt="image" width="200" height="200">
+            <div class="product-name2">БУКЕТ ІЗ 19-ТИ РОЖЕВИХ ТРОЯНД “ЛЕДІ БОМБАСТІК”</div>
+            <div class="product-price">ціна від 1520</div>
+            <a href="#buy" class="buy-button">Купити</a>
+        </div>
+        <div class="product-card2">
+             <img src="./images/pich-blossom_3_1996.400x400.png" alt="image" width="200" height="200">
+             <div class="product-name2">БУКЕТ ІЗ 39-ТИ ТРОЯНД “ПІЧ БЛОССОМ”</div>
+            <div class="product-price">ціна від 2730</div>
+            <a href="#buy" class="buy-button">Купити</a>
+        </div>
+    </div> 
+    <div class="product-grid3">
+        <div class="product-card3">
+            <img src="./images/blossom_bablz_3_2017_1.400x400.png" alt="image" width="200" height="200">
+            <div class="product-name3">БУКЕТ ІЗ 19-ТИ ПІВОНІЄПОДІБНИХ ТРОЯНД “МІСТІ БАБЛ”</div>
+            <div class="product-price2">ціна від 1900</div>
+            <a href="#buy" class="buy-button2">Купити</a>
+        </div>
+        <div class="product-card3">
+            <img src="./images/buket-belyh-roz-utrennyaya-svezhest-1.400x400.png" alt="image" width="200" height="200">
+            <div class="product-name3">БУКЕТ ЗІ 101-Ї БІЛОЇ ТРОЯНДИ “РАНКОВА СВІЖІСТЬ”</div>
+            <div class="product-price2">ціна від 4343</div>
+            <a href="#buy" class="buy-button2">Купити</a>
+        </div>
+        <div class="product-card3">
+             <img src="./images/dsc_4459.400x400.png" alt="image" width="200" height="200">
+             <div class="product-name3">БУКЕТ ІЗ 51 ПЕРСИКОВОЇ ТРОЯНДИ “СВІТ ПІНК”</div>
+            <div class="product-price2">ціна від 2193</div>
+            <a href="#buy" class="buy-button2">Купити</a>
+        </div>
+    </div>
+    <div class="feedback">
+        <h1 style="color: #FA8282;">Відгук про сайт:</h1>
+        <p>Нас цікавить ваша думка! Поділіться з нами своїми враженнями від візиту нашого сайту. 
+            Чи вам сподобався дизайн і зручність користування? Залиште свій відгук, обравши один із 
+            варіантів:</p>
+        <a href="#yes" class="yes">Так, вражений!</a>
+        <a href="#no" class="no">Ні, є пропозиції щодо поліпшень.</a>
+    </div>
+    <div class="adress">
+        <p>Адреса: проспект Червоной Калини, 5</p>
+    </div>
+</body>
+</html>
